@@ -66,16 +66,38 @@ class ViewController: UIViewController {
     }
     
     @IBAction func buttonTapped(_ sender: UIButton) {
+        
+        UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 5, options: [], animations: {
+            sender.transform = CGAffineTransform(scaleX: 0.7, y: 0.7)
+        }, completion: { _ in
+            UIView.animate(withDuration: 0.6, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 5, options: [], animations: {
+                sender.transform = CGAffineTransform(scaleX: 1, y: 1)
+            }, completion: { [weak self] _ in
+                self?.checkAnswer(sender.tag)
+            })
+        })
+        
+    }
+    
+    @objc func showScore() {
+        let currentScore = defaults.integer(forKey: "score")
+        let scoreAlert = UIAlertController(title: "Score", message: nil, preferredStyle: .actionSheet)
+        scoreAlert.addAction(UIAlertAction(title: "Your current score is \(currentScore)", style: .default, handler: nil))
+        present(scoreAlert, animated: true)
+        
+    }
+    
+    func checkAnswer(_ answer: Int) {
         var title: String
         score = defaults.integer(forKey: "score")
         tempScore = defaults.integer(forKey: "maxScore")
-
-        if sender.tag == correctAnswer {
+        
+        if answer == correctAnswer {
             title = "Correct!"
             score += 1
             askedQuestion += 1
         } else {
-            title = "Wrong! This is the flag of \(countries[sender.tag].uppercased())!"
+            title = "Wrong! This is the flag of \(countries[answer].uppercased())!"
             score -= 1
             askedQuestion += 1
         }
@@ -110,16 +132,8 @@ class ViewController: UIViewController {
         }
         
         defaults.set(score, forKey: "score")
-    }
-    
-    @objc func showScore() {
-        let currentScore = defaults.integer(forKey: "score")
-        let scoreAlert = UIAlertController(title: "Score", message: nil, preferredStyle: .actionSheet)
-        scoreAlert.addAction(UIAlertAction(title: "Your current score is \(currentScore)", style: .default, handler: nil))
-        present(scoreAlert, animated: true)
         
     }
-    
     
 }
 
