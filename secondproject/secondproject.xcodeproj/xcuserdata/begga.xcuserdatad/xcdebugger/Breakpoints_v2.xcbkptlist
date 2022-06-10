@@ -14,8 +14,8 @@
             filePath = "secondproject/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "116"
-            endingLineNumber = "116"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
             landmarkName = "showScore()"
             landmarkType = "7">
          </BreakpointContent>

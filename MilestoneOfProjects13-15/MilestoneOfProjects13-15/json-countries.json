@@ -1,0 +1,50 @@
+[
+  {
+    "name": "USA",
+    "capital": "Washington, D.C",
+    "currency": "United Sates Dollar ($)",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Flag_of_the_United_States_%28Pantone%29.svg/800px-Flag_of_the_United_States_%28Pantone%29.svg.png?20160113211754",
+    "size": "3,796,742 sq mi",
+    "population": "With more than 311 million people, it is the third most poplulous country in the world "
+  },
+  {
+    "name": "Scotland",
+    "capital": "Edinburgh",
+    "currency": "Pound Sterling (£)",
+    "flag": "https://m.media-amazon.com/images/I/51SA9zX6zjL._AC_SX425_.jpg",
+    "size": "30,090 sq mi",
+    "population": " 5,454 million people"
+  },
+  {
+    "name": "England",
+    "capital": "London",
+    "currency": "Pound Sterling (£)",
+    "flag": "https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1200px-Flag_of_the_United_Kingdom.svg.png",
+    "size": "50,301 sq mi",
+    "population": " 55,58 millon people"
+  },
+  {
+    "name": "Northern Ireland",
+    "capital": "Belfast",
+    "currency": "Pound Sterling (£)",
+    "flag": "https://cdn.britannica.com/92/3092-004-5B98A367/Flag-of-Northern-Ireland.jpg",
+    "size": "5 455,6 sq mi",
+    "population": " 1,855 million people"
+  },
+  {
+    "name": "Wales",
+    "capital": "Cardiff",
+    "currency": "Pound Sterling (£)",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Flag_of_Wales.svg/255px-Flag_of_Wales.svg.png",
+    "size": "8,023 sq mi",
+    "population": " 3,136 million people"
+  },
+  {
+    "capital": "Tokyo",
+    "currency": "Japanese Yen (¥,円)",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/800px-Flag_of_Japan.svg.png",
+    "size": "145,937 sq mi",
+    "population": " 125,8 million people",
+    "name": "Japan"
+  }
+]
