@@ -13,12 +13,13 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let urlPath = Bundle.main.url(forResource: "json-countries", withExtension: "json")
-        let urlString = urlPath?.path
-        if let url = URL(string: urlString!) {
-            if let data = try? Data(contentsOf: url) {
-                //code here
-            }
+        title = "Countries I want to visit"
+        
+        guard let urlPath = Bundle.main.path(forResource: "json-countries", ofType: "json") else { return }
+        let url = URL(fileURLWithPath: urlPath)
+        if let data = try? Data(contentsOf: url) {
+            parse(json: data)
+            return
         }
         
     }
@@ -30,16 +31,24 @@ class ViewController: UITableViewController {
             countries = jsonCountries.results
             tableView.reloadData()
         }
+        
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return countries.count
     }
-    
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = "It is a title"
+        let country = countries[indexPath.row]
+        cell.textLabel?.text = country.name
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = DetailViewController()
+        vc.detailItem = countries[indexPath.row]
+        navigationController?.pushViewController(vc, animated: true)
     }
 
 }

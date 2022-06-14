@@ -13,9 +13,10 @@
 		9A25F7D62852EFBB0081449B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A25F7D42852EFBB0081449B /* Main.storyboard */; };
 		9A25F7D82852EFBD0081449B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A25F7D72852EFBD0081449B /* Assets.xcassets */; };
 		9A25F7DB2852EFBD0081449B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A25F7D92852EFBD0081449B /* LaunchScreen.storyboard */; };
-		9A25F7E32852F0C50081449B /* json-countries.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A25F7E22852F0C50081449B /* json-countries.json */; };
-		9A25F7E528530EE80081449B /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A25F7E428530EE80081449B /* Country.swift */; };
-		9A25F7E7285310620081449B /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A25F7E6285310620081449B /* Countries.swift */; };
+		9A9AEBDA2853584600D5DBD8 /* json-countries.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A9AEBD92853584600D5DBD8 /* json-countries.json */; };
+		9A9AEBDC2853D90300D5DBD8 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9AEBDB2853D90300D5DBD8 /* Country.swift */; };
+		9A9AEBDE2853D90E00D5DBD8 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9AEBDD2853D90E00D5DBD8 /* Countries.swift */; };
+		9A9AEBE02855CDF700D5DBD8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9AEBDF2855CDF700D5DBD8 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +28,10 @@
 		9A25F7D72852EFBD0081449B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A25F7DA2852EFBD0081449B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A25F7DC2852EFBD0081449B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9A25F7E22852F0C50081449B /* json-countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "json-countries.json"; sourceTree = "<group>"; };
-		9A25F7E428530EE80081449B /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
-		9A25F7E6285310620081449B /* Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
+		9A9AEBD92853584600D5DBD8 /* json-countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "json-countries.json"; sourceTree = "<group>"; };
+		9A9AEBDB2853D90300D5DBD8 /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		9A9AEBDD2853D90E00D5DBD8 /* Countries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
+		9A9AEBDF2855CDF700D5DBD8 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,13 +67,14 @@
 				9A25F7CE2852EFBB0081449B /* AppDelegate.swift */,
 				9A25F7D02852EFBB0081449B /* SceneDelegate.swift */,
 				9A25F7D22852EFBB0081449B /* ViewController.swift */,
-				9A25F7E428530EE80081449B /* Country.swift */,
-				9A25F7E6285310620081449B /* Countries.swift */,
+				9A9AEBDF2855CDF700D5DBD8 /* DetailViewController.swift */,
+				9A9AEBDB2853D90300D5DBD8 /* Country.swift */,
+				9A9AEBDD2853D90E00D5DBD8 /* Countries.swift */,
 				9A25F7D42852EFBB0081449B /* Main.storyboard */,
 				9A25F7D72852EFBD0081449B /* Assets.xcassets */,
 				9A25F7D92852EFBD0081449B /* LaunchScreen.storyboard */,
 				9A25F7DC2852EFBD0081449B /* Info.plist */,
-				9A25F7E22852F0C50081449B /* json-countries.json */,
+				9A9AEBD92853584600D5DBD8 /* json-countries.json */,
 			);
 			path = "MilestoneOfProjects13-15";
 			sourceTree = "<group>";
@@ -136,7 +139,7 @@
 			files = (
 				9A25F7DB2852EFBD0081449B /* LaunchScreen.storyboard in Resources */,
 				9A25F7D82852EFBD0081449B /* Assets.xcassets in Resources */,
-				9A25F7E32852F0C50081449B /* json-countries.json in Resources */,
+				9A9AEBDA2853584600D5DBD8 /* json-countries.json in Resources */,
 				9A25F7D62852EFBB0081449B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,10 +151,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A25F7E528530EE80081449B /* Country.swift in Sources */,
+				9A9AEBDC2853D90300D5DBD8 /* Country.swift in Sources */,
 				9A25F7D32852EFBB0081449B /* ViewController.swift in Sources */,
 				9A25F7CF2852EFBB0081449B /* AppDelegate.swift in Sources */,
-				9A25F7E7285310620081449B /* Countries.swift in Sources */,
+				9A9AEBE02855CDF700D5DBD8 /* DetailViewController.swift in Sources */,
+				9A9AEBDE2853D90E00D5DBD8 /* Countries.swift in Sources */,
 				9A25F7D12852EFBB0081449B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

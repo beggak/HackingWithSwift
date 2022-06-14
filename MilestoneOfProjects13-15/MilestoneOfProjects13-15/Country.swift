@@ -12,6 +12,7 @@ struct Country: Codable {
     var capital: String
     var currency: String
     var flag: URL
-    var sixe: String
+    var size: String
     var population: String
+    var fact: String
 }
